@@ -1,0 +1,43 @@
+{
+  "name": "webxfoil-wasm",
+  "version": "0.1.0",
+  "description": "XFOIL WebAssembly build and wrapper.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PR-DC/WebXFOIL"
+  },
+  "homepage": "https://pr-dc.com",
+  "author": "Milos Petrasinovic <mpetrasinovic@pr-dc.com>",
+  "keywords": [
+    "xfoil",
+    "aerodynamics",
+    "cfd",
+    "fortran",
+    "wasm",
+    "webassembly"
+  ],
+  "license": "GPL-2.0-or-later",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "dist/",
+    "sources/",
+    "src/",
+    "tools/",
+    "scripts/",
+    "index.js",
+    "SOURCES.md",
+    "COPYING",
+    "THIRD_PARTY_NOTICES.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "fetch-deps": "powershell -ExecutionPolicy Bypass -NoProfile -File scripts/fetch_deps.ps1",
+    "build": "node tools/build.js",
+    "smoke": "node tools/smoke_test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
