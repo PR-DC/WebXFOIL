@@ -147,7 +147,9 @@ const { raw, output } = xfoil.run(input, {
 ## Sources
 - scripts/fetch_deps.ps1 stores the XFOIL tarball in sources/.
 - Upstream XFOIL version: 6.996 (xfoil6.996.tgz).
-- Keep sources/ with your distribution to satisfy GPL source availability.
+- npm releases may omit the cached `sources/` folder from the package tarball.
+- Corresponding Source for `webxfoil-wasm@X.Y.Z` is provided in this repository
+  at git tag `vX.Y.Z` (same version as npm).
 - Use -Force to re-download the upstream archive.
 
 ## Environment variables
@@ -174,6 +176,8 @@ const { raw, output } = xfoil.run(input, {
 - This package is GPL-2.0-or-later.
 - XFOIL is distributed under the GNU GPL (see the MIT XFOIL download page).
   If you distribute the produced WebAssembly build, comply with the GPL.
+- For npm distributions, the Corresponding Source is this repository at the
+  git tag matching the npm package version.
 - See SOURCES.md for source provenance details.
 - See COPYING for the full license text.
 - See THIRD_PARTY_NOTICES.md for toolchain/runtime notices.

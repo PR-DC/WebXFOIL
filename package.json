@@ -1,6 +1,6 @@
 {
   "name": "webxfoil-wasm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "XFOIL WebAssembly build and wrapper.",
   "repository": {
     "type": "git",
@@ -21,7 +21,6 @@
   "main": "index.js",
   "files": [
     "dist/",
-    "sources/",
     "src/",
     "tools/",
     "scripts/",

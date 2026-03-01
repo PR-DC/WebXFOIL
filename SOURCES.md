@@ -7,6 +7,12 @@ Corresponding Source. That means:
 - The exact upstream XFOIL source used (or a mirror) and its license.
 - This repository, which contains the build scripts and patches.
 
+For npm distributions of `webxfoil-wasm`, the package tarball may omit the
+cached `sources/` directory. The Corresponding Source is provided in this
+repository at the git tag that matches the npm package version:
+- npm `webxfoil-wasm@X.Y.Z` -> git tag `vX.Y.Z`
+- repository URL: https://github.com/PR-DC/WebXFOIL
+
 Upstream source:
 - Name: XFOIL
 - License: GPL (see upstream site)
@@ -14,7 +20,7 @@ Upstream source:
 - Fallback URL: https://web.mit.edu/drela/Public/web/xfoil/xfoil6.99.tgz
 - Downloaded by: scripts/fetch_deps.ps1
 - The download script records the URL and SHA256 in this file.
-- Local archive path: sources/
+- Local archive path in the git repo: sources/
 
 Build modifications (applied by tools/build.js):
 - Disable IARGC/GETARG handling for wasm ABI compatibility.
